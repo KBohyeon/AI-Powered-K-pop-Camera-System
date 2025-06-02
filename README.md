@@ -30,12 +30,11 @@
 |카메라 움직임|반응적/즉석 대응|사전 계획/최적화|
 |부드러움|보통(갑작스러운 움직임 가능)|부드러움|
 
-🎯 데드존 방식
 ---
 
 <table>
   <tr>
-    <td align="center"><b>멤버 전체 크롭 박스</b></td>
+    <td align="center"><b>비교</b></td>
   </tr>
   <tr>
     <td><img src="./images/방식 설명.gif" width="980px"></td>
@@ -60,6 +59,7 @@ graph TD
     style E fill:#99ccff
     style F fill:#cccccc
 ```
+<img src="./images/데드존 설명.png" width="60%">
 
 ### 🎪 가우시안 스무딩 (전체 경로 최적화)
 ```mermaid
@@ -104,7 +104,7 @@ graph TD
 Python 3.8 이상 필요
 
 
-### SAMURAI 프레임워크 설치
+### SAMURAI 클론 및 다운
 
 ```bash
 git clone https://github.com/yangchris11/samurai
@@ -170,7 +170,7 @@ samuria/</br>
     <td align="center"><b>미리 보기 GIF</b></td>
   </tr>
   <tr>
-    <td><img src="./images/Full_View_With_Crop_Boxes.gif" width="500%"></td>
+    <td><img src="./images/Full_View_With_Crop_Boxes.gif" width="960px"></td>
   </tr>
 </table>
 
