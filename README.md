@@ -14,6 +14,66 @@
   - 최대 6명의 멤버 동시 추적
   - 모든 멤버의 추적 박스 표시
 
+
+---
+
+## 🧠 핵심 기술: 가우시안 스무딩 vs 데드존 방식
+
+  🎯 왜 가우시안 스무딩을 선택했는가?</br>
+  
+     이 프로젝트는 초기에 데드존(Dead-zone) 방식으로 개발되었지만, 더 나은 사용자 경험 및 부드러운 움직임을 위해 가우시안 스무딩 방식으로 전환했습니다.</br>
+     실시간 스트리밍은 불가능하며 후처리 전용으로만 사용이 가능합니다.
+
+|특성|🎯 데드존 방식|✨ 가우시안 스무딩 방식|
+|------|---|---|
+|실시간 처리|✅지원|❌ 불가능|
+|카메라 움직임|반응적/즉석 대응|사전 계획/최적화|
+|부드러움|보통(갑작스러운 움직임 가능)|부드러움|
+
+<table>
+  <tr>
+    <td align="center"><b>멤버 전체 크롭 박스</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/방식 설명.gif" width="100%"></td>
+  </tr>
+</table>
+
+### ⚡ 데드존 방식
+```mermaid
+graph TD
+    A[📹 현재 프레임 입력] --> B[📍 멤버 위치 감지]
+    B --> C{🎯 데드존 경계 체크}
+    C -->|벗어남| D[🔄 카메라 즉시 이동]
+    C -->|안전구역| E[⏸️ 카메라 정지]
+    D --> F[✂️ 실시간 크롭]
+    E --> F
+    
+    style A fill:#ff9999
+    style C fill:#ffcc99
+    style D fill:#ff6666
+    style E fill:#99ccff
+    style F fill:#cccccc
+```
+
+### 🎪 가우시안 스무딩 (전체 경로 최적화)
+```mermaid
+graph TD
+    A[📹 전체 영상 입력] --> B[🎯 AI 멤버 추적]
+    B --> C[📊 전체 중심점 수집]
+    C --> D[🔧 누락 데이터 보간]
+    D --> E[🌊 가우시안 필터 적용]
+    E --> F[📈 최적 경로 계산]
+    F --> G[💾 경로 사전 저장]
+    G --> H[✂️ 고품질 크롭 생성]
+    
+    style A fill:#9999ff
+    style E fill:#6666ff
+    style F fill:#4444ff
+    style G fill:#3333cc
+    style H fill:#cccccc
+```
+
 ---
 
 ## ⚙️ 기술 스택
@@ -83,7 +143,7 @@ samuria/</br>
 
 ---
 ## 🌄 실행 결과 보기
-원본 화질은 구글 드라이브에서 다운로드 후 확인이 가능합니다.
+원본 화질은 아래의 구글 드라이브에서 다운로드 후 확인이 가능합니다.
 >[ (※ 멤버 전체 크롭 박스 영상 링크)](https://drive.google.com/file/d/1Z8fTXFBCOgYdPK6mFNNT5SSssFEGI6tu/view?usp=drive_link)</br>
 >[ (※ 개인 크롭 영상 링크)](https://drive.google.com/file/d/1r_-Mr7mPRT2HAe8ER7Z8t5xjmkcKWmwe/view?usp=drive_link)
 <table>
@@ -105,7 +165,6 @@ samuria/</br>
   <tr>
     <td><img src="./images/Full_View_With_Crop_Boxes.gif" width="300%"></td>
   </tr>
-      
 </table>
 
 ---
