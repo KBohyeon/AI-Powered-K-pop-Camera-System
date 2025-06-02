@@ -110,7 +110,9 @@ Python 3.8 이상 필요
 ```bash
 git clone https://github.com/yangchris11/samurai
 cd samurai
+# https://github.com/yangchris11/samurai 들어가서 필요한 라이브러리 설치
 # SAM 2.1 모델을 checkpoints/ 폴더에 다운로드
+
 ```
 
 ### AI-Powered-K-pop-Camera-System 클론 및 다운
