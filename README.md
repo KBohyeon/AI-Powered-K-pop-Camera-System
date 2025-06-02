@@ -83,8 +83,9 @@ samuria/</br>
 
 ---
 ## 🌄 실행 결과 보기
->[ (※ 멤버 전체 크롭 박스 영상 링크)](https://www.youtube.com/watch?v=3hWu7DHPN4Q)
->[ (※ 개인 크롭 영상 링크)](https://www.youtube.com/shorts/9QvCRJi_8eQ)
+원본 화질은 구글 드라이브에서 다운로드 후 확인이 가능합니다.
+>[ (※ 멤버 전체 크롭 박스 영상 링크)](https://drive.google.com/file/d/1Z8fTXFBCOgYdPK6mFNNT5SSssFEGI6tu/view?usp=drive_link)</br>
+>[ (※ 개인 크롭 영상 링크)](https://drive.google.com/file/d/1r_-Mr7mPRT2HAe8ER7Z8t5xjmkcKWmwe/view?usp=drive_link)
 <table>
   <tr>
     <td align="center"><b>멤버 전체 크롭 박스</b></td>
@@ -98,6 +99,13 @@ samuria/</br>
   <tr>
     <td><img src="./images/해원 개인 크롭.png" width="50%"></td>
   </tr>
+    <tr>
+    <td align="center"><b>미리 보기 GIF</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/Full_View_With_Crop_Boxes.gif" width="300%"></td>
+  </tr>
+      
 </table>
 
 ---
