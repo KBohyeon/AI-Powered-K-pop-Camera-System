@@ -82,16 +82,22 @@ samuria/</br>
 다운로드한 multi_member_optimal_system.py와 사용할 영상.mp4가 samuria 파일에 들어있어야합니다.
 
 ---
-## 🌄 실행 화면 보기(사용 방법 및 시연)
-
+## 🌄 실행 결과 보기
+>[ (※ 멤버 전체 크롭 박스 영상 링크)](https://www.youtube.com/watch?v=3hWu7DHPN4Q)
+>[ (※ 개인 크롭 영상 링크)](https://www.youtube.com/shorts/9QvCRJi_8eQ)
 <table>
   <tr>
     <td align="center"><b>멤버 전체 크롭 박스</b></td>
-    <td align="center"><b>📱 </b></td>
   </tr>
   <tr>
-    <td><img src="./images/메인페이지.png" width="100%"></td>
-    <td><img src="./images/메인페이지 모바일.png" width="50%"></td>
+    <td><img src="./images/전체.png" width="100%"></td>
+  </tr>
+    <tr>
+    <td align="center"><b>개인 크롭</b></td>
+  </tr>
+  <tr>
+    <td><img src="./images/해원 개인 크롭.png" width="50%"></td>
+  </tr>
 </table>
 
 ---
