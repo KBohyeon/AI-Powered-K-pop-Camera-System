@@ -102,16 +102,50 @@ graph TD
 
 ## 🔧 설치 및 실행
 
+### 꼭 순서대로 하셔야 실행이 됩니다.
+
 Python 3.8 이상 필요
 
 
-### SAMURAI 클론 및 다운
+### SAMURAI 클론 및 라이브러리 다운
 
 ```bash
+# 1. SAMURAI 프로젝트 다운로드
 git clone https://github.com/yangchris11/samurai
 cd samurai
-# https://github.com/yangchris11/samurai 들어가서 필요한 라이브러리 설치
+
+# 2. 🚨 중요! PyTorch를 먼저 설치해야 함
+pip install torch>=2.3.1 torchvision>=0.18.1
+
+# 3. SAM 2 설치 (SAMURAI 버전)
+cd sam2
+pip install -e .
+pip install -e ".[notebooks]"
+
+# 4. 다른 필요한 라이브러리들 설치
+pip install matplotlib==3.7 tikzplotlib jpeg4py opencv-python lmdb pandas scipy loguru
+
+# 5. SAM 2.1 체크포인트(모델 파일) 다운로드
+cd ../checkpoints
+./download_ckpts.sh
+cd ..
+
+# 5-1. checkpoints 폴더가 없다면(있으면 무시)
+# samurai 폴더에서
+mkdir checkpoints
+cd checkpoints
+
+python -c "import urllib.request; base_url = 'https://dl.fbaipublicfiles.com/segment_anything_2/092824/'; models = ['sam2.1_hiera_tiny.pt', 'sam2.1_hiera_small.pt', 'sam2.1_hiera_base_plus.pt']; [urllib.request.urlretrieve(f'{base_url}{model}', model) or print(f'✅ {model} downloaded!') for model in models]"
+
 # SAM 2.1 모델을 checkpoints/ 폴더에 다운로드
+
+# 6. 설치 확인(설치확인이 확실하면 안해도 상관 없습니다.)
+python -c "import torch; import sam2; print('✅ PyTorch 버전:', torch.__version__); print('✅ SAM2 설치 완료!'); print('✅ 체크포인트 파일들 준비 완료!')"
+
+#아래와 같이 뜨면 성공
+✅ PyTorch 버전: 2.7.0+cpu
+✅ SAM2 설치 완료!
+✅ 체크포인트 파일들 준비 완료!
 
 ```
 
@@ -119,6 +153,7 @@ cd samurai
 
 ```bash
 git clone https://github.com/KBohyeon/AI-Powered-K-pop-Camera-System
+#다운 후 samurai 파일에 복사 
 ```
 
 ### 의존성 설치
