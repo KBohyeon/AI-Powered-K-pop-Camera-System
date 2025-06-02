@@ -153,7 +153,7 @@ python -c "import torch; import sam2; print('✅ PyTorch 버전:', torch.__versi
 
 ```bash
 git clone https://github.com/KBohyeon/AI-Powered-K-pop-Camera-System
-#다운 후 samurai 파일에 복사 
+#다운 후 samurai 파일에 복사 파일 안에 테스트 영상도 같이 있습니다(nmixx6.mp4) 
 ```
 
 ### 의존성 설치
