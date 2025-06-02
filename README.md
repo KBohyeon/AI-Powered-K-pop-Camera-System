@@ -165,6 +165,12 @@ pip install pillow
 pip install scipy
 ```
 
+### 실행
+
+```bash
+python multi_member_optimal_system.py
+```
+
 ---
 
 📊 프로젝트 구조
