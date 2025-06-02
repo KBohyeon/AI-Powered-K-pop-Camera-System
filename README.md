@@ -14,15 +14,15 @@
   - 최대 6명의 멤버 동시 추적
   - 모든 멤버의 추적 박스 표시
 
-
 ---
 
 ## 🧠 핵심 기술: 가우시안 스무딩 vs 데드존 방식
 
-  🎯 왜 가우시안 스무딩을 선택했는가?</br>
+  왜 가우시안 스무딩을 선택했는가?</br>
   
-     이 프로젝트는 초기에 데드존(Dead-zone) 방식으로 개발되었지만, 더 나은 사용자 경험 및 부드러운 움직임을 위해 가우시안 스무딩 방식으로 전환했습니다.</br>
-     실시간 스트리밍은 불가능하며 후처리 전용으로만 사용이 가능합니다.
+  - 이 프로젝트는 초기에 데드존(Dead-zone) 방식으로 개발되었지만, 더 나은 사용자 경험 및 부드러운 움직임을 위해 가우시안 스무딩 방식으로 전환했습니다.</br>
+
+  - 실시간 스트리밍은 불가능하며 후처리 전용으로만 사용이 가능합니다.
 
 |특성|🎯 데드존 방식|✨ 가우시안 스무딩 방식|
 |------|---|---|
@@ -30,14 +30,19 @@
 |카메라 움직임|반응적/즉석 대응|사전 계획/최적화|
 |부드러움|보통(갑작스러운 움직임 가능)|부드러움|
 
+🎯 데드존 방식
+---
+
 <table>
   <tr>
     <td align="center"><b>멤버 전체 크롭 박스</b></td>
   </tr>
   <tr>
-    <td><img src="./images/방식 설명.gif" width="400%"></td>
+    <td><img src="./images/방식 설명.gif" width="980px"></td>
   </tr>
 </table>
+
+---
 
 ### ⚡ 데드존 방식
 ```mermaid
@@ -68,10 +73,7 @@ graph TD
     G --> H[✂️ 고품질 크롭 생성]
     
     style A fill:#9999ff
-    style E fill:#6666ff
-    style F fill:#4444ff
-    style G fill:#3333cc
-    style H fill:#cccccc
+    style H fill:#9999ff
 ```
 
 ---
@@ -153,17 +155,22 @@ samuria/</br>
   <tr>
     <td><img src="./images/전체.png" width="100%"></td>
   </tr>
+  </table>
+
+  <table>
     <tr>
     <td align="center"><b>개인 크롭</b></td>
   </tr>
   <tr>
     <td><img src="./images/해원 개인 크롭.png" width="50%"></td>
   </tr>
+</table>
+    <table>
     <tr>
     <td align="center"><b>미리 보기 GIF</b></td>
   </tr>
   <tr>
-    <td><img src="./images/Full_View_With_Crop_Boxes.gif" width="300%"></td>
+    <td><img src="./images/Full_View_With_Crop_Boxes.gif" width="500%"></td>
   </tr>
 </table>
 
@@ -174,6 +181,7 @@ samuria/</br>
 - 실시간 스트리밍 지원
 - 현재 터미널내 실행 가능 -> GUI 인터페이스 개발
 - 다양한 출력 비율 지원
+- 직캠 이외 스포츠 등 사용 가능하도록 개발
 
 ---
 
