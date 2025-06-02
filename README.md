@@ -35,7 +35,7 @@
     <td align="center"><b>멤버 전체 크롭 박스</b></td>
   </tr>
   <tr>
-    <td><img src="./images/방식 설명.gif" width="100%"></td>
+    <td><img src="./images/방식 설명.gif" width="400%"></td>
   </tr>
 </table>
 
