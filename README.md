@@ -1,6 +1,6 @@
-# 🔍 Automatic Crop
+# 🔍 AI_Kpop_Camera_System
 
-**Automatic Crop**은 SAMURAI 객체 추적 기술을 활용하여 K-pop 공연 영상에서 각 멤버를 자동으로 추적하고,<br/>
+**AI_Kpop_Camera_System**은 SAMURAI 객체 추적 기술을 활용하여 K-pop 공연 영상에서 각 멤버를 자동으로 추적하고,<br/>
 개인 직캠을 생성하는 지능형 영상처리 시스템입니다.<br/>
 
 사용자가 마우스로 간단히 멤버를 선택하면, AI가 자동으로 전체 영상에서 해당 멤버를 추적하여 부드럽고 안정적인 개인 직캠을 생성합니다.
