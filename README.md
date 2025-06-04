@@ -38,7 +38,7 @@
     <td align="center"><b>비교</b></td>
   </tr>
   <tr>
-    <td><img src="./images/방식 설명.gif" width="980px"></td>
+    <td><img src="./images/방식 설명.gif" width="700px"></td>
   </tr>
 </table>
 
